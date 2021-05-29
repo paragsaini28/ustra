@@ -1,4 +1,4 @@
-import Header from './category/component'
+import MainPage from './category/component'
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
@@ -9,7 +9,7 @@ export default function Main() {
                 <Typography variant="h5">
                     Our Products
                 </Typography>
-                <Header />
+                <MainPage />
             </Container>
         </div>
     )

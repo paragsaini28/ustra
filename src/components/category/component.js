@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 import { mainPageApi } from './action'
 import Grid from '@material-ui/core/Grid';
-import { Button, Card } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import './component.css'
 
 const abc = {
@@ -27,7 +25,7 @@ const abc = {
     }
 }
 
-export default function Header() {
+export default function MainPage() {
     const [category, setCategory] = useState([])
     const [list, setList] = useState([])
 
@@ -57,7 +55,6 @@ export default function Header() {
                     null
                 }
             </div>
-            {/* </div> */}
             <br />
             <div>
                 {list.count > 0 ?
